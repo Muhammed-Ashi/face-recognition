@@ -1,0 +1,11 @@
+.form {
+    width: 700px;
+}
+
+
+@media screen and (max-width: 400px) {
+    #detect_button{
+        width: 40%;
+   
+    }
+  }  
