@@ -8,6 +8,7 @@ const cors  = require("cors")
 
   //console.log(postgress.select("*").from("users"))
   
+  
   app.use(express.json())
   app.use(cors()) 
  app.use("/api/user",userRouter)
