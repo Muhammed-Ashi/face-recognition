@@ -17,8 +17,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "unset  NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "unset  NODE_OPTIONS=--openssl-legacy-provider && react-scripts build && webpack",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "dev": "webpack serve",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
