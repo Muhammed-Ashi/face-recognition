@@ -17,13 +17,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build && webpack",
+    "start": "export  NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "export  NODE_OPTIONS=--openssl-legacy-provider && react-scripts build && webpack",
     "dev": "webpack serve",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -45,5 +44,8 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
 }
