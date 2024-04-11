@@ -10,7 +10,7 @@ import { useState } from 'react';
 import Signup from './Components/Register/Signup';
 
 
-function App() {
+ function App() {
   const [input, setinput] = useState("")
   const [imageUrl, setimageUrl] = useState("")
   const [box, setbox] = useState("")
@@ -137,5 +137,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

@@ -1,8 +1,10 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState  } from 'react'
 import axios from 'axios'
 
+
 function Signup({ onRouteChange }) {
+ 
 
   const [username, setusername] = useState("")
   const [password, setpassword] = useState("")
@@ -42,7 +44,8 @@ function Signup({ onRouteChange }) {
     axios.post('/api/user/register', { username, password })
       .then((response) => {
         console.log(response)
-        console.log("are ou")
+       onRouteChange('Home')
+      
       })
       .catch((error) => {
         console.log(error.response.data.error, "register error")

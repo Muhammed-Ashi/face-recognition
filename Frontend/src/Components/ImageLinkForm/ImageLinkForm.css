@@ -6,6 +6,11 @@
 @media screen and (max-width: 400px) {
     #detect_button{
         width: 40%;
-   
+      ;
+    }
+    #name{
+       padding-left: 10%;
+       padding-right: 11%;
+
     }
   }  
