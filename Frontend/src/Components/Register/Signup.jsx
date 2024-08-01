@@ -41,7 +41,7 @@ function Signup({ onRouteChange }) {
 
   const RegisterUser = () => {
 
-    axios.post('/api/user/register', { username, password })
+    axios.post('https://facedetector.top/api/user/register', { username, password })
       .then((response) => {
         console.log(response)
        onRouteChange('Home')

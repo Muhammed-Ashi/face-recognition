@@ -13,7 +13,7 @@ function Sign({ onRouteChange }) {
 
     console.log("SUBMITTED")
     e.preventDefault();
-    axios.post("/api/user/login", { username, password })
+    axios.post("https://facedetector.top/api/user/login", { username, password })
       .then((response) => {
         console.log(response)
         console.log('are you')
