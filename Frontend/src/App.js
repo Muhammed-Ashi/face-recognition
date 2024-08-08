@@ -123,16 +123,16 @@ import Signup from './Components/Register/Signup';
   return (
     <div className="App">
       <Navigation onRouteChange={onRouteChange} isSignedIn={isSignedIn} />
-      {route === "Home" ? <div>
+       <div>
         <Logo />
         <ImageLinkForm onInputChange={onInputChange} onButtonSubmit={onButtonSubmit} />
         <FaceRecognition imageUrl={imageUrl} box={box} />
-      </div> : (
-        route === "signin" ?
-          <Sign onRouteChange={onRouteChange} /> : <Signup onRouteChange={onRouteChange} />
-      )
+      </div> 
+        
+       
+      
 
-      }
+      
 
     </div>
   );
